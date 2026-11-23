@@ -1,0 +1,1121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hsck 黄仓库官网 - 原创高清视频内容生态 | 创作者与社区</title>
+<meta name="description" content="hsck 黄仓库官方网站，聚焦原创高清视频内容生态，汇聚专业创作者与垂直领域精品内容，持续运营的品牌视频社区平台，为用户提供值得信赖的高品质影像体验。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f2937'/%3E%3Crect x='18' y='16' width='10' height='34' rx='3' fill='%23f5c518'/%3E%3Crect x='36' y='16' width='10' height='20' rx='3' fill='%23f5c518'/%3E%3Crect x='36' y='42' width='10' height='8' rx='3' fill='%23e85d3d'/%3E%3C/svg%3E">
+<style>
+:root{
+  --hsck-ink:#141821;
+  --hsck-ink-2:#1e2430;
+  --hsck-paper:#f4f2ec;
+  --hsck-white:#ffffff;
+  --hsck-gold:#f5c518;
+  --hsck-red:#e85d3d;
+  --hsck-line:#dcd8cc;
+  --hsck-muted:#6b7280;
+  --hsck-teal:#1f7a6b;
+  --hsck-radius:14px;
+  --hsck-shadow:0 12px 34px rgba(20,24,33,.10);
+  --hsck-head-h:118px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  background:var(--hsck-paper);
+  color:var(--hsck-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:800;letter-spacing:.01em;}
+p{margin:0 0 1em;}
+ul{margin:0;padding:0;list-style:none;}
+section{scroll-margin-top:calc(var(--hsck-head-h) + 18px);}
+
+.hsck-wrap{width:min(1180px,calc(100% - 40px));margin:0 auto;}
+.hsck-sticky{position:sticky;top:0;z-index:80;}
+
+/* 公告条 */
+.hsck-announce{
+  background:linear-gradient(90deg,#141821 0%,#242c3b 55%,#2d3648 100%);
+  color:#f4f2ec;
+  font-size:13.5px;
+  border-bottom:1px solid rgba(245,197,24,.35);
+}
+.hsck-announce .hsck-wrap{display:flex;align-items:center;gap:14px;min-height:42px;padding:6px 0;overflow:hidden;}
+.hsck-announce__tag{
+  flex:none;
+  background:var(--hsck-gold);
+  color:#141821;
+  font-weight:800;
+  font-size:12px;
+  padding:2px 9px;
+  border-radius:999px;
+  letter-spacing:.06em;
+}
+.hsck-announce__track{display:flex;gap:34px;white-space:nowrap;animation:hsckTicker 34s linear infinite;}
+.hsck-announce__track span{opacity:.92;}
+.hsck-announce__track b{color:var(--hsck-gold);font-weight:700;}
+@keyframes hsckTicker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* 页头 */
+.hsck-header{background:rgba(244,242,236,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--hsck-line);}
+.hsck-header__bar{display:flex;align-items:center;gap:22px;min-height:74px;}
+.hsck-brand{display:flex;align-items:center;gap:11px;flex:none;}
+.hsck-brand__mark{
+  width:40px;height:40px;border-radius:11px;background:var(--hsck-ink);
+  display:grid;place-items:center;position:relative;flex:none;
+}
+.hsck-brand__mark::before{content:"";position:absolute;width:6px;height:22px;background:var(--hsck-gold);left:11px;top:9px;border-radius:2px;}
+.hsck-brand__mark::after{content:"";position:absolute;width:6px;height:13px;background:var(--hsck-gold);right:11px;top:9px;border-radius:2px;box-shadow:0 14px 0 -2px var(--hsck-red);}
+.hsck-brand__txt strong{display:block;font-size:17px;letter-spacing:.03em;}
+.hsck-brand__txt small{display:block;font-size:11px;color:var(--hsck-muted);letter-spacing:.22em;}
+.hsck-nav{display:flex;gap:4px;margin-left:8px;flex:1;flex-wrap:wrap;}
+.hsck-nav a{
+  font-size:14.5px;font-weight:600;padding:7px 11px;border-radius:8px;color:#333a47;transition:.18s;
+}
+.hsck-nav a:hover{background:#e8e4d8;color:var(--hsck-ink);}
+.hsck-search{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--hsck-line);border-radius:999px;padding:5px 6px 5px 15px;min-width:250px;}
+.hsck-search input{border:0;outline:0;font-size:14px;background:transparent;width:100%;color:var(--hsck-ink);}
+.hsck-search button{border:0;background:var(--hsck-ink);color:#fff;border-radius:999px;padding:7px 15px;font-size:13.5px;font-weight:700;transition:.18s;}
+.hsck-search button:hover{background:var(--hsck-red);}
+.hsck-burger{display:none;border:1px solid var(--hsck-line);background:#fff;border-radius:10px;padding:8px 12px;font-size:15px;font-weight:700;}
+.hsck-searchmsg{font-size:13px;color:var(--hsck-teal);font-weight:600;padding:0 0 10px;display:none;}
+
+/* 首屏 */
+.hsck-hero{padding:52px 0 34px;}
+.hsck-hero__grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:46px;align-items:center;}
+.hsck-hero__eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:800;letter-spacing:.16em;color:var(--hsck-teal);background:#e4efec;padding:5px 13px;border-radius:999px;margin-bottom:18px;}
+.hsck-hero h1{font-size:clamp(40px,6vw,68px);letter-spacing:-.01em;line-height:1.06;font-weight:900;}
+.hsck-hero h1 em{font-style:normal;color:var(--hsck-red);}
+.hsck-hero__lead{font-size:16.5px;color:#3c4350;margin-top:20px;max-width:34em;}
+.hsck-hero__intro{font-size:14.5px;color:var(--hsck-muted);margin-top:14px;max-width:36em;}
+.hsck-hero__stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:26px;max-width:520px;}
+.hsck-hero__stat{background:#fff;border:1px solid var(--hsck-line);border-radius:12px;padding:12px 14px;}
+.hsck-hero__stat b{display:block;font-size:22px;font-weight:900;letter-spacing:-.02em;}
+.hsck-hero__stat span{font-size:12px;color:var(--hsck-muted);}
+.hsck-hero__buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;}
+.hsck-btn{border:0;border-radius:11px;padding:12px 24px;font-size:14.5px;font-weight:800;transition:.18s;display:inline-flex;align-items:center;gap:8px;}
+.hsck-btn--primary{background:var(--hsck-ink);color:#fff;box-shadow:0 10px 22px rgba(20,24,33,.22);}
+.hsck-btn--primary:hover{background:var(--hsck-red);transform:translateY(-2px);}
+.hsck-btn--ghost{background:#fff;color:var(--hsck-ink);border:1.5px solid var(--hsck-ink);}
+.hsck-btn--ghost:hover{background:var(--hsck-gold);border-color:var(--hsck-gold);}
+.hsck-hero__visual{position:relative;}
+.hsck-hero__visual img{border-radius:20px;box-shadow:var(--hsck-shadow);width:100%;aspect-ratio:4/4.4;object-fit:cover;}
+.hsck-hero__badge{
+  position:absolute;left:-14px;bottom:26px;background:#fff;border-radius:14px;padding:12px 16px;
+  box-shadow:var(--hsck-shadow);display:flex;align-items:center;gap:11px;border:1px solid var(--hsck-line);
+}
+.hsck-hero__badge b{font-size:13px;display:block;}
+.hsck-hero__badge span{font-size:11.5px;color:var(--hsck-muted);}
+.hsck-hero__dot{width:34px;height:34px;border-radius:50%;background:var(--hsck-gold);display:grid;place-items:center;font-size:15px;flex:none;}
+
+/* 通用区块标题 */
+.hsck-sec{padding:56px 0;}
+.hsck-sec--tight{padding:40px 0;}
+.hsck-sec__head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:30px;}
+.hsck-sec__kicker{font-size:12px;font-weight:900;letter-spacing:.2em;color:var(--hsck-red);text-transform:uppercase;}
+.hsck-sec__head h2{font-size:clamp(24px,3.4vw,34px);margin-top:8px;}
+.hsck-sec__head p{color:var(--hsck-muted);font-size:14px;max-width:34em;margin:8px 0 0;}
+
+/* 焦点内容 */
+.hsck-focus{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:26px;align-items:stretch;}
+.hsck-card{background:#fff;border:1px solid var(--hsck-line);border-radius:var(--hsck-radius);overflow:hidden;transition:.2s;}
+.hsck-card:hover{box-shadow:var(--hsck-shadow);transform:translateY(-3px);}
+.hsck-focus__main .hsck-thumb{position:relative;}
+.hsck-focus__main .hsck-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.hsck-play{
+  position:absolute;inset:0;display:grid;place-items:center;
+}
+.hsck-play span{
+  width:62px;height:62px;border-radius:50%;background:rgba(245,197,24,.94);color:#141821;
+  display:grid;place-items:center;font-size:20px;padding-left:4px;box-shadow:0 8px 20px rgba(0,0,0,.24);
+}
+.hsck-focus__main .hsck-cardbody{padding:20px 22px 22px;}
+.hsck-tagrow{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px;}
+.hsck-tag{font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:6px;background:#efeadb;color:#6a5a26;}
+.hsck-tag--teal{background:#e0efec;color:#1f6d61;}
+.hsck-cardbody h3{font-size:20px;margin-bottom:8px;}
+.hsck-cardbody p{font-size:14px;color:var(--hsck-muted);margin-bottom:12px;}
+.hsck-meta{display:flex;align-items:center;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--hsck-muted);}
+.hsck-meta b{color:var(--hsck-ink);}
+.hsck-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:14px;}
+.hsck-act{
+  border:1px solid var(--hsck-line);background:#fff;border-radius:8px;padding:5px 11px;font-size:12.5px;
+  font-weight:700;color:#3c4350;display:inline-flex;align-items:center;gap:5px;transition:.16s;
+}
+.hsck-act:hover{border-color:var(--hsck-ink);}
+.hsck-act.is-on{background:#fdece8;border-color:var(--hsck-red);color:var(--hsck-red);}
+.hsck-act--save.is-on{background:#fdf3d4;border-color:#c69b0c;color:#8f6f06;}
+.hsck-focus__list{display:flex;flex-direction:column;gap:14px;min-width:0;}
+.hsck-mini{display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;background:#fff;border:1px solid var(--hsck-line);border-radius:12px;padding:13px;transition:.18s;}
+.hsck-mini:hover{box-shadow:var(--hsck-shadow);transform:translateY(-2px);}
+.hsck-mini__no{width:64px;height:64px;border-radius:9px;display:grid;place-items:center;font-weight:900;font-size:19px;color:#141821;}
+.hsck-mini h3{font-size:15px;margin-bottom:4px;}
+.hsck-mini p{font-size:12.5px;color:var(--hsck-muted);margin:0 0 6px;}
+
+/* 视频列表（图文交替单列） */
+.hsck-vlist{display:flex;flex-direction:column;gap:22px;}
+.hsck-vrow{display:grid;grid-template-columns:minmax(0,.42fr) minmax(0,.58fr);gap:24px;background:#fff;border:1px solid var(--hsck-line);border-radius:var(--hsck-radius);padding:20px;}
+.hsck-vrow:nth-child(even){grid-template-columns:minmax(0,.58fr) minmax(0,.42fr);}
+.hsck-vrow:nth-child(even) .hsck-vrow__media{order:2;}
+.hsck-vrow__media img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:10px;}
+.hsck-vrow__body h3{font-size:19px;margin-bottom:8px;}
+.hsck-vrow__body p{font-size:14px;color:#4b5363;margin-bottom:12px;}
+
+/* 关键词解析 */
+.hsck-explore{background:var(--hsck-white);border-radius:22px;padding:44px clamp(20px,4vw,52px);border:1px solid var(--hsck-line);}
+.hsck-explore h2{font-size:clamp(24px,3.2vw,32px);margin-bottom:8px;}
+.hsck-explore__lede{color:var(--hsck-muted);font-size:14.5px;max-width:44em;margin-bottom:26px;}
+.hsck-explore__col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 36px;}
+.hsck-explore__col h3{font-size:17px;margin-bottom:8px;display:flex;gap:10px;align-items:baseline;}
+.hsck-explore__col h3 span{font-size:12px;font-weight:900;color:var(--hsck-red);}
+.hsck-explore__col p{font-size:14.5px;color:#3f4654;}
+
+/* 专题 */
+.hsck-specials{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.hsck-special{background:var(--hsck-ink);color:#f0eee6;border-radius:var(--hsck-radius);padding:24px;display:flex;flex-direction:column;transition:.2s;}
+.hsck-special:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(20,24,33,.24);}
+.hsck-special:nth-child(2){background:#1f3a37;}
+.hsck-special:nth-child(3){background:#3a2b1f;}
+.hsck-special__status{font-size:11.5px;font-weight:800;letter-spacing:.1em;color:var(--hsck-gold);}
+.hsck-special h3{font-size:20px;margin:10px 0 8px;}
+.hsck-special>p{font-size:13.5px;color:#c7c4b8;margin-bottom:16px;}
+.hsck-special ul{display:flex;flex-direction:column;gap:9px;border-top:1px solid rgba(255,255,255,.16);padding-top:14px;}
+.hsck-special li{font-size:13px;display:flex;gap:9px;align-items:baseline;color:#ddd9cd;}
+.hsck-special li::before{content:"›";color:var(--hsck-gold);font-weight:900;}
+
+/* 作者矩阵 */
+.hsck-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.hsck-author{display:grid;grid-template-columns:62px minmax(0,1fr);gap:16px;background:#fff;border:1px solid var(--hsck-line);border-radius:var(--hsck-radius);padding:18px;transition:.2s;}
+.hsck-author:hover{box-shadow:var(--hsck-shadow);}
+.hsck-avatar{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:22px;color:#141821;flex:none;}
+.hsck-author h3{font-size:16.5px;margin-bottom:3px;}
+.hsck-author__field{font-size:12px;font-weight:800;color:var(--hsck-teal);letter-spacing:.04em;margin-bottom:7px;}
+.hsck-author p{font-size:13px;color:#4b5363;margin-bottom:10px;}
+.hsck-author__nums{display:flex;gap:14px;font-size:12px;color:var(--hsck-muted);}
+.hsck-author__nums b{color:var(--hsck-ink);}
+.hsck-linktext{background:none;border:0;color:var(--hsck-red);font-size:12.5px;font-weight:800;padding:0;margin-left:auto;}
+
+/* 评论（双列短评） */
+.hsck-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.hsck-comment{background:#fff;border:1px solid var(--hsck-line);border-radius:12px;padding:16px 18px;}
+.hsck-comment__top{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.hsck-comment__top .hsck-avatar{width:36px;height:36px;font-size:15px;}
+.hsck-comment__top b{font-size:13.5px;}
+.hsck-comment__top span{font-size:11.5px;color:var(--hsck-muted);}
+.hsck-stars{color:#d8a800;font-size:12px;letter-spacing:1px;margin-left:auto;}
+.hsck-comment p{font-size:13.5px;color:#404656;margin:0;}
+
+/* 榜单 */
+.hsck-rank{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.hsck-rankl{background:#fff;border:1px solid var(--hsck-line);border-radius:var(--hsck-radius);padding:20px;}
+.hsck-rankl h3{font-size:15.5px;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--hsck-ink);}
+.hsck-rankl ol{display:flex;flex-direction:column;gap:11px;}
+.hsck-rankl li{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:9px;align-items:center;font-size:13.5px;}
+.hsck-rankl li i{font-style:normal;font-weight:900;color:var(--hsck-muted);font-size:12.5px;}
+.hsck-rankl li:nth-child(1) i{color:var(--hsck-red);}
+.hsck-rankl li em{font-style:normal;font-size:12px;color:var(--hsck-muted);}
+
+/* 动态 */
+.hsck-news{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+.hsck-newscard{background:#fff;border:1px solid var(--hsck-line);border-radius:12px;padding:18px;}
+.hsck-newscard time{font-size:11.5px;font-weight:800;color:var(--hsck-red);letter-spacing:.05em;}
+.hsck-newscard h3{font-size:15.5px;margin:7px 0 6px;}
+.hsck-newscard p{font-size:13px;color:var(--hsck-muted);margin:0;}
+
+/* 合作 */
+.hsck-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;}
+.hsck-partner{background:#fff;border:1px dashed var(--hsck-line);border-radius:11px;padding:16px;text-align:center;font-size:13.5px;font-weight:700;color:#4b5363;}
+.hsck-partner small{display:block;font-size:11px;color:var(--hsck-muted);font-weight:500;margin-top:3px;}
+
+/* FAQ */
+.hsck-faq{display:flex;flex-direction:column;gap:10px;max-width:900px;}
+.hsck-faq details{background:#fff;border:1px solid var(--hsck-line);border-radius:11px;padding:0 18px;}
+.hsck-faq summary{cursor:pointer;font-weight:700;font-size:14.5px;padding:15px 0;list-style:none;display:flex;gap:10px;align-items:center;}
+.hsck-faq summary::-webkit-details-marker{display:none;}
+.hsck-faq summary::before{content:"+";font-weight:900;color:var(--hsck-red);font-size:17px;width:14px;}
+.hsck-faq details[open] summary::before{content:"–";}
+.hsck-faq details p{font-size:13.5px;color:#4b5363;margin:0 0 15px;padding-left:24px;}
+
+/* 页脚 */
+.hsck-footer{background:var(--hsck-ink);color:#c9c6ba;padding:50px 0 26px;margin-top:20px;}
+.hsck-footer__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;}
+.hsck-footer h3{font-size:14px;color:#fff;margin-bottom:12px;letter-spacing:.05em;}
+.hsck-footer p{font-size:13px;margin-bottom:9px;}
+.hsck-footer li{font-size:13px;margin-bottom:7px;}
+.hsck-footer a:hover{color:var(--hsck-gold);}
+.hsck-footer__bottom{border-top:1px solid rgba(255,255,255,.13);margin-top:34px;padding-top:18px;font-size:12px;color:#9a978c;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;}
+.hsck-footer__brand{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.hsck-footer__brand strong{color:#fff;font-size:16px;}
+
+/* Toast & Modal */
+.hsck-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,18px);background:var(--hsck-ink);color:#fff;
+  padding:11px 22px;border-radius:999px;font-size:13.5px;font-weight:700;opacity:0;pointer-events:none;transition:.26s;z-index:200;
+}
+.hsck-toast.is-show{opacity:1;transform:translate(-50%,0);}
+.hsck-modal{position:fixed;inset:0;background:rgba(14,17,24,.6);display:none;place-items:center;padding:20px;z-index:190;}
+.hsck-modal.is-open{display:grid;}
+.hsck-modal__box{background:#fff;border-radius:16px;max-width:480px;width:100%;padding:26px 26px 22px;position:relative;max-height:86vh;overflow:auto;}
+.hsck-modal__box h3{font-size:19px;margin-bottom:10px;}
+.hsck-modal__box p{font-size:14px;color:#4b5363;}
+.hsck-modal__box input,.hsck-modal__box textarea{
+  width:100%;border:1px solid var(--hsck-line);border-radius:9px;padding:10px 12px;font-size:14px;font-family:inherit;margin-bottom:12px;outline:none;
+}
+.hsck-modal__box input:focus,.hsck-modal__box textarea:focus{border-color:var(--hsck-ink);}
+.hsck-modal__close{position:absolute;top:12px;right:14px;border:0;background:#f0eee6;width:32px;height:32px;border-radius:50%;font-size:16px;font-weight:800;}
+
+.hsck-top{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;border:0;background:var(--hsck-ink);color:var(--hsck-gold);
+  font-size:17px;display:grid;place-items:center;box-shadow:var(--hsck-shadow);opacity:0;pointer-events:none;transition:.24s;z-index:120;
+}
+.hsck-top.is-show{opacity:1;pointer-events:auto;}
+
+@media (max-width:1024px){
+  .hsck-hero__grid{grid-template-columns:1fr;gap:30px;}
+  .hsck-hero__visual img{aspect-ratio:16/10;}
+  .hsck-focus{grid-template-columns:1fr;}
+  .hsck-specials,.hsck-rank,.hsck-news{grid-template-columns:1fr 1fr;}
+  .hsck-partners{grid-template-columns:repeat(2,1fr);}
+  .hsck-explore__col{grid-template-columns:1fr;}
+  .hsck-footer__grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:820px){
+  :root{--hsck-head-h:110px;}
+  .hsck-burger{display:inline-block;margin-left:auto;}
+  .hsck-header__bar{flex-wrap:wrap;padding:10px 0;gap:12px;}
+  .hsck-nav{display:none;order:4;width:100%;flex-direction:column;margin:0;border-top:1px solid var(--hsck-line);padding-top:8px;}
+  .hsck-nav.is-open{display:flex;}
+  .hsck-search{order:3;width:100%;margin-top:4px;}
+  .hsck-vrow,.hsck-vrow:nth-child(even){grid-template-columns:1fr;}
+  .hsck-vrow:nth-child(even) .hsck-vrow__media{order:0;}
+  .hsck-authors,.hsck-comments,.hsck-specials,.hsck-rank,.hsck-news{grid-template-columns:1fr;}
+  .hsck-hero__stats{grid-template-columns:1fr 1fr 1fr;gap:9px;}
+  .hsck-hero__stat b{font-size:19px;}
+  .hsck-hero__badge{left:8px;bottom:10px;}
+}
+@media (max-width:560px){
+  .hsck-wrap{width:calc(100% - 28px);}
+  .hsck-hero{padding:34px 0 20px;}
+  .hsck-hero__stats{grid-template-columns:1fr;}
+  .hsck-footer__grid{grid-template-columns:1fr;}
+  .hsck-partners{grid-template-columns:1fr;}
+  .hsck-explore{padding:30px 18px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="hsck-sticky">
+  <div class="hsck-announce" aria-label="站内最新更新">
+    <div class="hsck-wrap">
+      <span class="hsck-announce__tag">官方发布</span>
+      <div class="hsck-announce__track">
+        <span><b>11·22 新增</b>《黄仓库·城市夜行档案》第 4 集上线，4K 高清正版</span>
+        <span><b>专题</b>「深挖一帧」第二季开放报名，投稿截止 12 月 08 日</span>
+        <span><b>榜单</b>本周创作者口碑榜更新，新人榜 6 位创作者首次入榜</span>
+        <span><b>11·22 新增</b>《黄仓库·城市夜行档案》第 4 集上线，4K 高清正版</span>
+        <span><b>专题</b>「深挖一帧」第二季开放报名，投稿截止 12 月 08 日</span>
+        <span><b>榜单</b>本周创作者口碑榜更新，新人榜 6 位创作者首次入榜</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="hsck-header">
+    <div class="hsck-wrap hsck-header__bar">
+      <a class="hsck-brand" href="#hsck-top" aria-label="hsck 黄仓库官网首页">
+        <span class="hsck-brand__mark" aria-hidden="true"></span>
+        <span class="hsck-brand__txt"><strong>hsck 黄仓库</strong><small>HUANG CANG KU</small></span>
+      </a>
+      <button class="hsck-burger" id="hsckBurger" aria-expanded="false" aria-controls="hsckNav">菜单</button>
+      <nav class="hsck-nav" id="hsckNav" aria-label="主导航">
+        <a href="#hsck-focus">焦点内容</a>
+        <a href="#hsck-explore">关键词解析</a>
+        <a href="#hsck-specials">品牌专题</a>
+        <a href="#hsck-authors">创作者</a>
+        <a href="#hsck-comments">用户口碑</a>
+        <a href="#hsck-rank">数据榜单</a>
+        <a href="#hsck-faq">帮助中心</a>
+      </nav>
+      <form class="hsck-search" id="hsckSearchForm" role="search">
+        <input type="search" id="hsckSearchInput" placeholder="搜索视频、创作者、专题" aria-label="站内搜索">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+    <div class="hsck-wrap"><div class="hsck-searchmsg" id="hsckSearchMsg" role="status"></div></div>
+  </header>
+</div>
+
+<main id="hsck-top">
+
+  <!-- 首屏 -->
+  <section class="hsck-hero" aria-labelledby="hsck-hero-title">
+    <div class="hsck-wrap hsck-hero__grid">
+      <div>
+        <span class="hsck-hero__eyebrow">官方网站 · 原创 · 高清</span>
+        <h1 id="hsck-hero-title"><em>hsck 黄仓库</em></h1>
+        <p class="hsck-hero__lead">一个以真实影像为底色的视频品牌社区——我们深耕垂直领域内容生态，为创作者与企业搭建值得信赖的高清视频平台。</p>
+        <p class="hsck-hero__intro">作为国内持续运营的原创视频品牌官网，hsck 黄仓库坚持以品质为先、用户至上，用专业的内容运营陪伴每一位记录者成长。</p>
+        <div class="hsck-hero__stats">
+          <div class="hsck-hero__stat"><b data-count="18600">18600</b><span>原创正版视频</span></div>
+          <div class="hsck-hero__stat"><b data-count="1240">1240</b><span>签约创作者</span></div>
+          <div class="hsck-hero__stat"><b data-count="9.6">9.6</b><span>社区口碑评分</span></div>
+        </div>
+        <div class="hsck-hero__buttons">
+          <a class="hsck-btn hsck-btn--primary" href="#hsck-focus">观看焦点内容</a>
+          <a class="hsck-btn hsck-btn--ghost" href="#hsck-authors">认识创作者</a>
+          <button class="hsck-btn hsck-btn--ghost" type="button" data-open="submit">我要投稿</button>
+        </div>
+      </div>
+      <div class="hsck-hero__visual">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 800'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23141a24'/%3E%3Cstop offset='1' stop-color='%23323d4f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='800' fill='url(%23g1)'/%3E%3Ccircle cx='540' cy='190' r='120' fill='%23f5c518' opacity='.85'/%3E%3Crect x='60' y='300' width='330' height='420' rx='18' fill='%23f4f2ec' opacity='.95'/%3E%3Crect x='90' y='336' width='270' height='150' rx='10' fill='%23e85d3d'/%3E%3Crect x='90' y='510' width='270' height='14' rx='7' fill='%23c9c4b4'/%3E%3Crect x='90' y='540' width='200' height='14' rx='7' fill='%23d8d3c3'/%3E%3Crect x='90' y='569' width='230' height='14' rx='7' fill='%23d8d3c3'/%3E%3Crect x='90' y='598' width='160' height='14' rx='7' fill='%23d8d3c3'/%3E%3Cpath d='M420 520 L560 600 L420 680 Z' fill='%23f5c518' opacity='.92'/%3E%3Ccircle cx='180' cy='220' r='8' fill='%23f4f2ec'/%3E%3Ccircle cx='230' cy='190' r='5' fill='%23f4f2ec' opacity='.6'/%3E%3C/svg%3E" alt="hsck 黄仓库品牌主视觉：深色画框中的高清影像与金色播放标识" width="720" height="800">
+        <div class="hsck-hero__badge">
+          <span class="hsck-hero__dot" aria-hidden="true">▶</span>
+          <span><b>本周焦点首播</b><span>城市夜行档案 · 第 4 集</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业简介 -->
+  <section class="hsck-sec hsck-sec--tight" id="hsck-about" aria-labelledby="hsck-about-title">
+    <div class="hsck-wrap">
+      <div class="hsck-explore">
+        <span class="hsck-sec__kicker">关于品牌</span>
+        <h2 id="hsck-about-title">一家把影像做成长期事业的视频企业</h2>
+        <p class="hsck-explore__lede">hsck 黄仓库官方网站是企业对外唯一的内容窗口，也是创作者与观众之间长期稳定的连接点。</p>
+        <p>hsck 黄仓库成立于影像内容工业化尚在起步的阶段，从一间只有三台摄像机的小型工作室开始，逐步搭建起覆盖选题、拍摄、后期、分发与社区运营的完整体系。作为一家持续运营的视频企业，我们把“记录真实、陪伴成长”写进品牌基因：不追逐短期热点，而是用一年三季的稳定更新节奏，把普通人的生活切片做成可反复观看的高清内容。我们相信品质来自流程，口碑来自细节，因此在内容审核、版权登记、画质标准与创作者分成上，都建立了公开透明的规则。多年来，hsck 黄仓库在生活方式、城市探索、手作与人物访谈等垂直领域积累了深厚资源，成为许多观众与品牌方心中值得信赖的合作伙伴。官网每天更新原创正版内容，也同步展示企业动态、招募信息与合作方案，欢迎每一位认真做内容的人加入这片内容生态。</p>
+        <div class="hsck-hero__buttons" style="margin-top:8px;">
+          <a class="hsck-btn hsck-btn--primary" href="#hsck-specials">了解品牌专题</a>
+          <a class="hsck-btn hsck-btn--ghost" href="#hsck-faq">常见问题</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="hsck-sec" id="hsck-focus" aria-labelledby="hsck-focus-title">
+    <div class="hsck-wrap">
+      <div class="hsck-sec__head">
+        <div>
+          <span class="hsck-sec__kicker">Focus · 焦点</span>
+          <h2 id="hsck-focus-title">hsck 黄仓库本周焦点：一幅大图与四段值得反复看的影像</h2>
+          <p>焦点位由编辑团队与社区口碑共同决定，每一支影片都经过画质复核与版权登记。</p>
+        </div>
+      </div>
+
+      <div class="hsck-focus">
+        <article class="hsck-card hsck-focus__main">
+          <div class="hsck-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23202a3a'/%3E%3Crect x='0' y='300' width='800' height='150' fill='%23151d29'/%3E%3Cg fill='%23f5c518'%3E%3Crect x='70' y='120' width='24' height='180' rx='5'/%3E%3Crect x='120' y='90' width='24' height='210' rx='5'/%3E%3Crect x='170' y='150' width='24' height='150' rx='5'/%3E%3Crect x='220' y='70' width='24' height='230' rx='5'/%3E%3C/g%3E%3Cg fill='%23e85d3d'%3E%3Crect x='380' y='180' width='18' height='120' rx='4'/%3E%3Crect x='412' y='140' width='18' height='160' rx='4'/%3E%3Crect x='444' y='200' width='18' height='100' rx='4'/%3E%3C/g%3E%3Ccircle cx='640' cy='160' r='70' fill='%23f4f2ec' opacity='.14'/%3E%3Ccircle cx='700' cy='120' r='26' fill='%23f5c518'/%3E%3Cpath d='M330 380 Q400 320 470 380 T610 380' stroke='%23f4f2ec' stroke-width='3' fill='none' opacity='.5'/%3E%3C/svg%3E" alt="城市夜行档案第4集封面：夜色中的灯光与声波图形" width="800" height="450">
+            <div class="hsck-play" aria-hidden="true"><span>▶</span></div>
+          </div>
+          <div class="hsck-cardbody">
+            <div class="hsck-tagrow"><span class="hsck-tag">城市探索</span><span class="hsck-tag hsck-tag--teal">4K 高清</span><span class="hsck-tag">官方首播</span></div>
+            <h3>城市夜行档案 · 第 4 集：凌晨四点的批发市场</h3>
+            <p>跟随摄影师老周走进城市还未苏醒的时段，记录灯火、吆喝与一车车新鲜蔬菜如何进入街区。全片采用手持自然光拍摄，保留了环境声与呼吸感。</p>
+            <div class="hsck-meta"><b>创作者：老周在路上</b><span>播放 128.6 万</span><span>点赞 9.4 万</span><span>收藏 2.1 万</span></div>
+            <div class="hsck-actions">
+              <button class="hsck-act" type="button" data-like><span aria-hidden="true">♡</span> 点赞 <b>94012</b></button>
+              <button class="hsck-act hsck-act--save" type="button" data-save><span aria-hidden="true">☆</span> 收藏</button>
+              <button class="hsck-act" type="button" data-copy>复制链接</button>
+              <button class="hsck-act" type="button" data-open="report">反馈</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="hsck-focus__list">
+          <article class="hsck-mini">
+            <div class="hsck-mini__no" style="background:#f5c518;">01</div>
+            <div>
+              <h3>一双手的二十年：皮具修复师的桌面</h3>
+              <p>深度测评 · 手作 DIY · 播放 62.3 万</p>
+              <div class="hsck-actions"><button class="hsck-act" type="button" data-like><span aria-hidden="true">♡</span> 点赞</button><button class="hsck-act hsck-act--save" type="button" data-save><span aria-hidden="true">☆</span></button></div>
+            </div>
+          </article>
+          <article class="hsck-mini">
+            <div class="hsck-mini__no" style="background:#e0efec;">02</div>
+            <div>
+              <h3>把咖啡做出家常味：三种滤杯的对照实验</h3>
+              <p>实用技巧 · 生活方式 · 播放 48.9 万</p>
+              <div class="hsck-actions"><button class="hsck-act" type="button" data-like><span aria-hidden="true">♡</span> 点赞</button><button class="hsck-act hsck-act--save" type="button" data-save><span aria-hidden="true">☆</span></button></div>
+            </div>
+          </article>
+          <article class="hsck-mini">
+            <div class="hsck-mini__no" style="background:#f0e2d6;">03</div>
+            <div>
+              <h3>访谈：从剪辑师到独立导演的七年</h3>
+              <p>人物访谈 · 创作幕后 · 播放 39.1 万</p>
+              <div class="hsck-actions"><button class="hsck-act" type="button" data-like><span aria-hidden="true">♡</span> 点赞</button><button class="hsck-act hsck-act--save" type="button" data-save><span aria-hidden="true">☆</span></button></div>
+            </div>
+          </article>
+          <article class="hsck-mini">
+            <div class="hsck-mini__no" style="background:#dfe6f2;">04</div>
+            <div>
+              <h3>社区挑战：用一支镜头讲完一条街</h3>
+              <p>兴趣同好 · 比赛报名 · 播放 27.6 万</p>
+              <div class="hsck-actions"><button class="hsck-act" type="button" data-like><span aria-hidden="true">♡</span> 点赞</button><button class="hsck-act hsck-act--save" type="button" data-save><span aria-hidden="true">☆</span></button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析 -->
+  <section class="hsck-sec hsck-sec--tight" id="hsck-explore" aria-labelledby="hsck-explore-title">
+    <div class="hsck-wrap">
+      <div class="hsck-explore">
+        <span class="hsck-sec__kicker">深度解析</span>
+        <h2 id="hsck-explore-title">读懂 hsck 黄仓库：从关键词到内容生态的完整脉络</h2>
+        <p class="hsck-explore__lede">很多新观众第一次来到官网，会好奇“hsck 黄仓库”到底代表什么。我们愿意用四个角度，把这套持续运营的内容体系讲清楚。</p>
+        <div class="hsck-explore__col">
+          <div>
+            <h3><span>01</span>关键词的由来与品牌定位</h3>
+            <p>“hsck”是我们内部沿用多年的项目代号缩写，最初写在拍摄场记板的角落，后来被创作者们叫顺了口，干脆成为对外统一的品牌标识；“黄仓库”则来自早期那间刷着浅黄色墙漆的器材仓库——所有设备、灯架、反光板和备用电池都从那里出发，再回到那里。这个带着现场气息的名字，提醒我们内容是从具体劳动里长出来的，而不是凭空生成的热词。品牌定位上，hsck 黄仓库把自己定义为一家以视频为核心的企业级内容平台：既制作自有原创节目，也为合作品牌提供高清影像解决方案，同时运营一个鼓励投稿与互动的社区。我们并不追求视频数量的绝对领先，而是希望在垂直领域做到行业领先的品质标准——每一条上线的影片都要通过画质检测、字幕校对与版权核验，每一条评论都会被真实的人读到。也正因如此，很多用户在比较多个平台之后，会把 hsck 黄仓库官网放进收藏夹，作为日常观看与灵感收集的固定入口。</p>
+          </div>
+          <div>
+            <h3><span>02</span>内容生态：从创作到分发的全链路</h3>
+            <p>在 hsck 黄仓库，一支影片的旅程可以拆成六个环节：选题会、勘景与脚本、拍摄、粗剪与精剪、声音与调色、审核与上线。选题会每周一次，编辑与创作者共同讨论，避免同质化；勘景阶段会记录光线与噪音条件，为后期保留空间；拍摄坚持双机备份与原始素材双盘存储，这是我们对“正版高清”的底线；粗剪之后会有一次面向小范围观众的试映，收集真实反馈再进入精剪；声音与调色由固定班组负责，保证品牌视觉的一致性；最后的审核环节包含版权链核查与敏感信息复核，通过后才进入分发队列。分发不只是发布，还包括专题聚合、榜单推荐、社区话题与合作渠道的同步。我们把这一整套流程称为“内容生态”，它让创作不再是孤立的个体行为，而是一条可复用、可学习、可被新人快速上手的生产线。过去几年，正是这套流程支撑我们稳定完成每季的主题企划，也让不少新人创作者在第一次投稿时就获得了专业级的成片体验。</p>
+          </div>
+          <div>
+            <h3><span>03</span>社区与创作者：真实关系带来的口碑</h3>
+            <p>社区是 hsck 黄仓库最看重的资产。我们不做“点赞即结束”的一次性互动，而是把评论区当成内容的第二现场：创作者会在发布后 48 小时内亲自回复高赞评论，编辑会整理有价值的补充信息，形成可检索的讨论档案。每周的“深挖一帧”活动鼓励观众截取一个画面，写下自己看到的光线、构图或情绪，优秀留言会被做成合集在官网展示。对创作者，我们提供分层成长路径：新人期有拍摄补贴与剪辑指导，成长期有专题联合企划与商业对接，成熟期则参与年度企划与线下放映。分成规则公开在帮助中心，播放、点赞、收藏与完播率共同决定收益权重，避免单一指标带来的畸形竞争。我们相信口碑不是刷出来的，而是由一次次准时的更新、一次次认真的回复、一次次如约兑现的承诺累积而成。许多合作方正是看到社区里真实而热烈的讨论，才决定把品牌影像项目交给 hsck 黄仓库团队。</p>
+          </div>
+          <div>
+            <h3><span>04</span>品质标准与社会责任</h3>
+            <p>品质标准是品牌的生命线。我们对画面分辨率、码率、色彩空间、字幕字号与出现时长都有明确规范，移动端与桌面端分别做适配测试，确保在常见设备上都能获得清晰稳定的观看体验。音频方面要求人声清晰、环境声不刺耳，重要内容必须提供完整字幕。版权方面，所有音乐、字体与素材均需提供授权凭证，原创内容统一登记存档，转载与合作必须走官方渠道。社会责任同样写进日常运营：涉及未成年人出镜的内容需监护人书面同意；城市探索类选题避免打扰居民正常生活；户外拍摄遵守当地规定并带走垃圾；对涉及隐私的画面做必要处理。我们还会定期发布内容治理报告，说明审核量、下架原因与改进措施。这些看起来“不酷”的工作，恰恰是 hsck 黄仓库能够持续运营、被用户与品牌方同时信赖的原因。官网上的每一条精品内容背后，都有一整套认真到略显固执的流程在支撑。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频内容列表 -->
+  <section class="hsck-sec" id="hsck-videos" aria-labelledby="hsck-videos-title">
+    <div class="hsck-wrap">
+      <div class="hsck-sec__head">
+        <div>
+          <span class="hsck-sec__kicker">Videos · 精选</span>
+          <h2 id="hsck-videos-title">hsck 黄仓库近期精品内容：图文交替的四段影像</h2>
+          <p>每一条都附有标签、作者与真实数据，方便你判断是否值得花时间。</p>
+        </div>
+      </div>
+      <div class="hsck-vlist">
+        <article class="hsck-vrow">
+          <div class="hsck-vrow__media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 450'%3E%3Crect width='720' height='450' fill='%23e9e4d6'/%3E%3Crect x='60' y='80' width='280' height='290' rx='12' fill='%231f7a6b'/%3E%3Crect x='88' y='120' width='220' height='16' rx='8' fill='%23f4f2ec' opacity='.8'/%3E%3Crect x='88' y='156' width='170' height='16' rx='8' fill='%23f4f2ec' opacity='.55'/%3E%3Ccircle cx='520' cy='160' r='80' fill='%23f5c518'/%3E%3Cpath d='M420 350 Q500 270 580 350' stroke='%23141821' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Crect x='480' y='300' width='30' height='70' rx='6' fill='%23e85d3d'/%3E%3C/svg%3E" alt="皮具修复师工作台特写封面：绿色背景与金色圆形图形" width="720" height="450">
+          </div>
+          <div class="hsck-vrow__body">
+            <div class="hsck-tagrow"><span class="hsck-tag">手作 DIY</span><span class="hsck-tag hsck-tag--teal">深度测评</span></div>
+            <h3>一双手的二十年：皮具修复师的桌面</h3>
+            <p>镜头贴近工作台，从一块磨旧的皮革开始，记录修复、上油、打蜡与缝合的全过程。片中不回避失败的返工，也完整保留老师傅对材料手感的口头描述，是一支适合静下心来看的手作影像。</p>
+            <div class="hsck-meta"><b>阿岚手作</b><span>播放 62.3 万</span><span>点赞 4.8 万</span><span>收藏 1.3 万</span></div>
+            <div class="hsck-actions">
+              <button class="hsck-act" type="button" data-like><span aria-hidden="true">♡</span> 点赞</button>
+              <button class="hsck-act hsck-act--save" type="button" data-save><span aria-hidden="true">☆</span> 收藏</button>
+              <button class="hsck-act" type="button" data-open="author">作者</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hsck-vrow">
+          <div class="hsck-vrow__media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 450'%3E%3Crect width='720' height='450' fill='%23242c3b'/%3E%3Ccircle cx='240' cy='200' r='110' fill='%23e85d3d' opacity='.9'/%3E%3Ccircle cx='470' cy='240' r='70' fill='%23f5c518'/%3E%3Crect x='80' y='340' width='560' height='14' rx='7' fill='%23f4f2ec' opacity='.4'/%3E%3Cpath d='M100 120 L200 60 L300 120 L400 60 L500 120 L600 60' stroke='%23f4f2ec' stroke-width='5' fill='none' opacity='.6'/%3E%3C/svg%3E" alt="咖啡滤杯对照实验封面：暖色圆形与波浪线构图" width="720" height="450">
+          </div>
+          <div class="hsck-vrow__body">
+            <div class="hsck-tagrow"><span class="hsck-tag">美食烹饪</span><span class="hsck-tag hsck-tag--teal">实用技巧</span></div>
+            <h3>把咖啡做出家常味：三种滤杯的对照实验</h3>
+            <p>同一支豆子、同一台磨豆机、同一水温，只更换滤杯形状，比较萃取时间与风味差异。片中给出了在家可复现的参数表，并提醒不同水质会带来明显变化，适合刚入门的同好收藏。</p>
+            <div class="hsck-meta"><b>小满的厨房</b><span>播放 48.9 万</span><span>点赞 3.1 万</span><span>收藏 2.4 万</span></div>
+            <div class="hsck-actions">
+              <button class="hsck-act" type="button" data-like><span aria-hidden="true">♡</span> 点赞</button>
+              <button class="hsck-act hsck-act--save" type="button" data-save><span aria-hidden="true">☆</span> 收藏</button>
+              <button class="hsck-act" type="button" data-open="author">作者</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hsck-vrow">
+          <div class="hsck-vrow__media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 450'%3E%3Crect width='720' height='450' fill='%23f0e2d6'/%3E%3Crect x='90' y='70' width='200' height='300' rx='8' fill='%23141821'/%3E%3Crect x='330' y='110' width='300' height='18' rx='9' fill='%23141821' opacity='.7'/%3E%3Crect x='330' y='150' width='240' height='18' rx='9' fill='%23141821' opacity='.5'/%3E%3Crect x='330' y='190' width='280' height='18' rx='9' fill='%23141821' opacity='.5'/%3E%3Ccircle cx='540' cy='330' r='58' fill='%231f7a6b'/%3E%3Cpath d='M520 305 L575 330 L520 355 Z' fill='%23f4f2ec'/%3E%3C/svg%3E" alt="独立导演访谈封面：黑色画框与绿色播放圆" width="720" height="450">
+          </div>
+          <div class="hsck-vrow__body">
+            <div class="hsck-tagrow"><span class="hsck-tag">人物访谈</span><span class="hsck-tag hsck-tag--teal">创作幕后</span></div>
+            <h3>访谈：从剪辑师到独立导演的七年</h3>
+            <p>一小时的长访谈被剪成四段，分别谈入行、独立项目、与团队协作，以及对“真实”的理解。受访者坦率讲述第一个长片项目超支的经历，并分享了给新人的三条实用建议。</p>
+            <div class="hsck-meta"><b>镜头之外</b><span>播放 39.1 万</span><span>点赞 2.6 万</span><span>收藏 0.9 万</span></div>
+            <div class="hsck-actions">
+              <button class="hsck-act" type="button" data-like><span aria-hidden="true">♡</span> 点赞</button>
+              <button class="hsck-act hsck-act--save" type="button" data-save><span aria-hidden="true">☆</span> 收藏</button>
+              <button class="hsck-act" type="button" data-open="author">作者</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hsck-vrow">
+          <div class="hsck-vrow__media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 450'%3E%3Crect width='720' height='450' fill='%23dfe6f2'/%3E%3Cpath d='M0 360 L160 250 L300 330 L460 210 L620 300 L720 240 L720 450 L0 450 Z' fill='%231f7a6b' opacity='.72'/%3E%3Ccircle cx='580' cy='120' r='52' fill='%23f5c518'/%3E%3Crect x='80' y='90' width='160' height='12' rx='6' fill='%23141821' opacity='.5'/%3E%3Crect x='80' y='120' width='120' height='12' rx='6' fill='%23141821' opacity='.35'/%3E%3C/svg%3E" alt="社区挑战活动封面：山峰剪影与金色太阳" width="720" height="450">
+          </div>
+          <div class="hsck-vrow__body">
+            <div class="hsck-tagrow"><span class="hsck-tag">兴趣同好</span><span class="hsck-tag hsck-tag--teal">比赛报名</span></div>
+            <h3>社区挑战：用一支镜头讲完一条街</h3>
+            <p>限定三分钟、限定单镜头拍摄，挑战自己用一次不间断的运镜讲清一条街的空间逻辑。活动页附有评审维度与提交格式，获胜作品将在官网专题长期展映，并进入年度合辑。</p>
+            <div class="hsck-meta"><b>hsck 官方企划</b><span>播放 27.6 万</span><span>点赞 1.8 万</span><span>收藏 0.7 万</span></div>
+            <div class="hsck-actions">
+              <button class="hsck-act" type="button" data-like><span aria-hidden="true">♡</span> 点赞</button>
+              <button class="hsck-act hsck-act--save" type="button" data-save><span aria-hidden="true">☆</span> 收藏</button>
+              <button class="hsck-act" type="button" data-open="submit">报名投稿</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌专题 -->
+  <section class="hsck-sec" id="hsck-specials" aria-labelledby="hsck-specials-title">
+    <div class="hsck-wrap">
+      <div class="hsck-sec__head">
+        <div>
+          <span class="hsck-sec__kicker">Specials · 企划</span>
+          <h2 id="hsck-specials-title">hsck 黄仓库三大专题企划：持续更新中的品牌项目</h2>
+          <p>专题是我们对垂直领域的长期投入，每个专题都有明确的主理人与更新节奏。</p>
+        </div>
+      </div>
+      <div class="hsck-specials">
+        <article class="hsck-special">
+          <span class="hsck-special__status">更新中 · 每周三</span>
+          <h3>深挖一帧</h3>
+          <p>从一支影片里挑出一个画面，聊光线、构图与情绪，让观众学会“看”而不只是“刷”。</p>
+          <ul>
+            <li>第 18 期：逆光里的一碗面</li>
+            <li>第 17 期：走廊尽头的自然光</li>
+            <li>第 16 期：雨夜反光的高级用法</li>
+          </ul>
+        </article>
+        <article class="hsck-special">
+          <span class="hsck-special__status">更新中 · 双周</span>
+          <h3>在地手艺人</h3>
+          <p>走访仍在用双手工作的匠人，记录他们的工具、节奏与对品质的固执坚持。</p>
+          <ul>
+            <li>皮具修复师的一天</li>
+            <li>老木匠的榫卯课</li>
+            <li>街角制伞人的雨季</li>
+          </ul>
+        </article>
+        <article class="hsck-special">
+          <span class="hsck-special__status">开放报名 · 12 月 08 日截止</span>
+          <h3>城市夜行档案</h3>
+          <p>面向全体创作者的城市影像共创计划，鼓励在夜间光线条件下完成叙事练习。</p>
+          <ul>
+            <li>已上线：第 1—4 集</li>
+            <li>报名通道：官网投稿入口</li>
+            <li>入选作品进入年度放映</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="hsck-sec" id="hsck-authors" aria-labelledby="hsck-authors-title">
+    <div class="hsck-wrap">
+      <div class="hsck-sec__head">
+        <div>
+          <span class="hsck-sec__kicker">Creators · 创作者</span>
+          <h2 id="hsck-authors-title">hsck 黄仓库创作者矩阵：六位长期合作的内容伙伴</h2>
+          <p>他们来自不同背景，但都认同同一件事——真实比技巧更难，也更值得。</p>
+        </div>
+      </div>
+      <div class="hsck-authors">
+        <article class="hsck-author">
+          <div class="hsck-avatar" style="background:#f5c518;">周</div>
+          <div>
+            <h3>老周在路上</h3>
+            <div class="hsck-author__field">城市探索 · 纪实摄影</div>
+            <p>拍了十二年城市，习惯凌晨出门，晚上整理素材。相信一条街的故事比一个地标更耐看，作品多以自然光与现场声为主，追求不打扰的观察方式。</p>
+            <div class="hsck-author__nums"><span>作品 <b>96</b></span><span>粉丝 <b>42.8 万</b></span><button class="hsck-linktext" type="button" data-open="author">档案</button></div>
+          </div>
+        </article>
+        <article class="hsck-author">
+          <div class="hsck-avatar" style="background:#cfe4df;">岚</div>
+          <div>
+            <h3>阿岚手作</h3>
+            <div class="hsck-author__field">手作 DIY · 深度测评</div>
+            <p>从服装设计转行做皮具，五年间修过上千件旧物。视频里不回避失败，也愿意花时间解释材料为什么这样选，希望观众看完能自己动手试一次。</p>
+            <div class="hsck-author__nums"><span>作品 <b>74</b></span><span>粉丝 <b>31.5 万</b></span><button class="hsck-linktext" type="button" data-open="author">档案</button></div>
+          </div>
+        </article>
+        <article class="hsck-author">
+          <div class="hsck-avatar" style="background:#f6d9cf;">满</div>
+          <div>
+            <h3>小满的厨房</h3>
+            <div class="hsck-author__field">美食烹饪 · 实用技巧</div>
+            <p>家庭厨房里的对照实验派，喜欢把参数写清楚、把变量控制住。她说做饭和做实验一样，先理解原理，再谈个人风格，观众常把她的视频当工具用。</p>
+            <div class="hsck-author__nums"><span>作品 <b>112</b></span><span>粉丝 <b>56.2 万</b></span><button class="hsck-linktext" type="button" data-open="author">档案</button></div>
+          </div>
+        </article>
+        <article class="hsck-author">
+          <div class="hsck-avatar" style="background:#e2e8f5;">镜</div>
+          <div>
+            <h3>镜头之外</h3>
+            <div class="hsck-author__field">人物访谈 · 创作幕后</div>
+            <p>前纪录片剪辑师，擅长在长访谈里找到真正动人的几句话。她的问题往往很短，却愿意给对方足够的沉默时间，因此常收到意料之外的回答。</p>
+            <div class="hsck-author__nums"><span>作品 <b>58</b></span><span>粉丝 <b>28.4 万</b></span><button class="hsck-linktext" type="button" data-open="author">档案</button></div>
+          </div>
+        </article>
+        <article class="hsck-author">
+          <div class="hsck-avatar" style="background:#e8e2d4;">野</div>
+          <div>
+            <h3>野径笔记</h3>
+            <div class="hsck-author__field">户外活动 · 旅行见闻</div>
+            <p>常年走山线的记录者，包里永远多带一块电池。作品强调路线信息与安全提示，反对为了画面冒险，也会如实拍下天气变坏时的撤退过程。</p>
+            <div class="hsck-author__nums"><span>作品 <b>66</b></span><span>粉丝 <b>24.7 万</b></span><button class="hsck-linktext" type="button" data-open="author">档案</button></div>
+          </div>
+        </article>
+        <article class="hsck-author">
+          <div class="hsck-avatar" style="background:#d9e6f2;">声</div>
+          <div>
+            <h3>声音采集员</h3>
+            <div class="hsck-author__field">音乐现场 · 治愈影像</div>
+            <p>专注环境声与现场录音，作品常被观众当作工作背景音。他坚持不用素材库，所有声音都亲自采集，并会在简介里标注录音设备与时间地点。</p>
+            <div class="hsck-author__nums"><span>作品 <b>83</b></span><span>粉丝 <b>19.9 万</b></span><button class="hsck-linktext" type="button" data-open="author">档案</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="hsck-sec" id="hsck-comments" aria-labelledby="hsck-comments-title">
+    <div class="hsck-wrap">
+      <div class="hsck-sec__head">
+        <div>
+          <span class="hsck-sec__kicker">Voices · 口碑</span>
+          <h2 id="hsck-comments-title">hsck 黄仓库的用户评价：来自社区的真实声音</h2>
+          <p>以下评论来自官网评论区与专题讨论，经用户授权后展示。</p>
+        </div>
+      </div>
+      <div class="hsck-comments">
+        <article class="hsck-comment">
+          <div class="hsck-comment__top"><div class="hsck-avatar" style="background:#f5c518;">林</div><b>林间散步</b><span>3 天前</span><span class="hsck-stars">★★★★★</span></div>
+          <p>第一次在 hsck 黄仓库看《城市夜行档案》就被震住了，凌晨的批发市场原来这么有层次。画质很干净，环境声也保留得好，看完特别想去早市走一圈。</p>
+        </article>
+        <article class="hsck-comment">
+          <div class="hsck-comment__top"><div class="hsck-avatar" style="background:#cfe4df;">陈</div><b>陈小满</b><span>5 天前</span><span class="hsck-stars">★★★★☆</span></div>
+          <p>咖啡对照实验那期我照着参数复现了两次，第二次确实更顺口。唯一的小建议是希望能附一份可下载的参数表，边看边记有点来不及。</p>
+        </article>
+        <article class="hsck-comment">
+          <div class="hsck-comment__top"><div class="hsck-avatar" style="background:#f6d9cf;">很</div><b>很多鱼</b><span>1 周前</span><span class="hsck-stars">★★★★★</span></div>
+          <p>作为投稿新人，最打动我的是编辑会认真回邮件，指出分镜哪里拖沓、声音哪里需要补。这种被当回事的感觉，在别的平台很少遇到。</p>
+        </article>
+        <article class="hsck-comment">
+          <div class="hsck-comment__top"><div class="hsck-avatar" style="background:#e2e8f5;">阿</div><b>阿青</b><span>1 周前</span><span class="hsck-stars">★★★★★</span></div>
+          <p>手作那期看得眼眶有点热，老师傅返工的时候一句抱怨都没有。hsck 黄仓库愿意把失败镜头留下来，这一点很难得，比全是高光的片子真实多了。</p>
+        </article>
+        <article class="hsck-comment">
+          <div class="hsck-comment__top"><div class="hsck-avatar" style="background:#e8e2d4;">山</div><b>山脚下</b><span>2 周前</span><span class="hsck-stars">★★★★☆</span></div>
+          <p>户外系列的安全提示写得很实在，会明确说“天气不好就撤”，这点值得点赞。画面很美，但我更看重这种不鼓励冒险的态度。</p>
+        </article>
+        <article class="hsck-comment">
+          <div class="hsck-comment__top"><div class="hsck-avatar" style="background:#d9e6f2;">夜</div><b>夜班编辑</b><span>2 周前</span><span class="hsck-stars">★★★★★</span></div>
+          <p>几乎每晚都开着声音采集员的片子工作，环境声做得很舒服，不会有突然的高频刺耳。官网的播放器也很稳，很少卡顿。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据榜单 -->
+  <section class="hsck-sec hsck-sec--tight" id="hsck-rank" aria-labelledby="hsck-rank-title">
+    <div class="hsck-wrap">
+      <div class="hsck-sec__head">
+        <div>
+          <span class="hsck-sec__kicker">Ranking · 榜单</span>
+          <h2 id="hsck-rank-title">hsck 黄仓库本周数据榜单：热度、新人、口碑三线观察</h2>
+          <p>榜单每周末更新，综合播放、互动与完播率，不作为唯一评判标准。</p>
+        </div>
+      </div>
+      <div class="hsck-rank">
+        <div class="hsck-rankl">
+          <h3>热度榜</h3>
+          <ol>
+            <li><i>1</i><span>城市夜行档案 · 第 4 集</span><em>128.6 万</em></li>
+            <li><i>2</i><span>一双手的二十年</span><em>62.3 万</em></li>
+            <li><i>3</i><span>三种滤杯的对照实验</span><em>48.9 万</em></li>
+            <li><i>4</i><span>从剪辑师到独立导演</span><em>39.1 万</em></li>
+            <li><i>5</i><span>用一支镜头讲完一条街</span><em>27.6 万</em></li>
+          </ol>
+        </div>
+        <div class="hsck-rankl">
+          <h3>新人榜</h3>
+          <ol>
+            <li><i>1</i><span>巷口红绿灯</span><em>新晋</em></li>
+            <li><i>2</i><span>一只慢船</span><em>新晋</em></li>
+            <li><i>3</i><span>屋顶放映员</span><em>新晋</em></li>
+            <li><i>4</i><span>拾光记</span><em>新晋</em></li>
+            <li><i>5</i><span>南窗手记</span><em>新晋</em></li>
+          </ol>
+        </div>
+        <div class="hsck-rankl">
+          <h3>口碑榜</h3>
+          <ol>
+            <li><i>1</i><span>声音采集员</span><em>9.8</em></li>
+            <li><i>2</i><span>阿岚手作</span><em>9.7</em></li>
+            <li><i>3</i><span>老周在路上</span><em>9.6</em></li>
+            <li><i>4</i><span>小满的厨房</span><em>9.5</em></li>
+            <li><i>5</i><span>镜头之外</span><em>9.4</em></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 合作 -->
+  <section class="hsck-sec" id="hsck-news" aria-labelledby="hsck-news-title">
+    <div class="hsck-wrap">
+      <div class="hsck-sec__head">
+        <div>
+          <span class="hsck-sec__kicker">Updates · 动态</span>
+          <h2 id="hsck-news-title">hsck 黄仓库企业动态：官方发布与合作伙伴</h2>
+          <p>关于内容更新、活动报名与合作的公开信息，都会在这里同步。</p>
+        </div>
+      </div>
+      <div class="hsck-news">
+        <article class="hsck-newscard">
+          <time datetime="2026-11-22">2026·11·22</time>
+          <h3>《城市夜行档案》第 4 集上线</h3>
+          <p>4K 高清正版首播，同步开放评论区补充信息征集，欢迎分享你所在城市的凌晨故事。</p>
+        </article>
+        <article class="hsck-newscard">
+          <time datetime="2026-11-18">2026·11·18</time>
+          <h3>「深挖一帧」第二季开放报名</h3>
+          <p>投稿截止 12 月 08 日，入选作者将获得拍摄补贴与专题联合企划机会，报名请走官网入口。</p>
+        </article>
+        <article class="hsck-newscard">
+          <time datetime="2026-11-12">2026·11·12</time>
+          <h3>内容治理月报（十一月上）发布</h3>
+          <p>本月上半月审核影片 412 支，因版权凭证不全下架 6 支，相关整改流程已同步更新至帮助中心。</p>
+        </article>
+      </div>
+      <div class="hsck-partners" style="margin-top:28px;">
+        <div class="hsck-partner">山野影像设备<small>器材支持伙伴</small></div>
+        <div class="hsck-partner">拾光书店<small>线下放映合作</small></div>
+        <div class="hsck-partner">城市文化馆<small>公共文化项目</small></div>
+        <div class="hsck-partner">木与光工作室<small>后期调色协作</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="hsck-sec" id="hsck-faq" aria-labelledby="hsck-faq-title">
+    <div class="hsck-wrap">
+      <div class="hsck-sec__head">
+        <div>
+          <span class="hsck-sec__kicker">Help · 帮助</span>
+          <h2 id="hsck-faq-title">hsck 黄仓库常见问题：投稿、版权与观看</h2>
+        </div>
+      </div>
+      <div class="hsck-faq">
+        <details open>
+          <summary>第一次投稿需要准备什么？</summary>
+          <p>请准备成片文件、封面图、150 字以内简介、素材授权凭证与本人联系方式。若使用第三方音乐或字体，需提供授权说明。我们建议先投一支 3 分钟以内的作品，便于编辑完整评估。</p>
+        </details>
+        <details>
+          <summary>投稿后多久能得到回复？</summary>
+          <p>通常在 7 个工作日内给出初审意见。若遇专题征集期，回复可能延后至 12 个工作日，我们会在投稿入口页面同步公告进度，不会让稿件无声消失。</p>
+        </details>
+        <details>
+          <summary>平台如何保障原创与正版？</summary>
+          <p>所有上线内容需通过版权链核查，原创作品统一登记存档。发现搬运或侵权可通过反馈入口提交证据，核实后我们会下架内容并公示处理结果。</p>
+        </details>
+        <details>
+          <summary>创作者分成怎么计算？</summary>
+          <p>分成综合播放量、有效互动、完播率与内容质量评级计算，权重与计算公式公开在帮助中心。每月 10 日前结算上月收益，明细可在创作者后台查看。</p>
+        </details>
+        <details>
+          <summary>可以申请线下放映或联合企划吗？</summary>
+          <p>可以。我们每年组织若干场小规模线下放映，也接受品牌方的联合企划提案。请通过页脚的合作邮箱联系，并附上项目简介与时间计划。</p>
+        </details>
+        <details>
+          <summary>观看时遇到卡顿或字幕异常怎么办？</summary>
+          <p>请先确认网络状况并尝试切换清晰度。若问题持续，请通过反馈弹窗描述设备型号与出现时间，技术同事会据此排查，处理结果会以站内消息告知。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="hsck-footer">
+  <div class="hsck-wrap">
+    <div class="hsck-footer__grid">
+      <div>
+        <div class="hsck-footer__brand"><span class="hsck-brand__mark" aria-hidden="true"></span><strong>hsck 黄仓库</strong></div>
+        <p>hsck 黄仓库官方网站 · 原创高清视频内容生态</p>
+        <p>持续运营中，坚持正版、专业、值得信赖的品牌承诺，与创作者共同成长。</p>
+        <p>合作联系：partner@hsck-brand.example</p>
+      </div>
+      <div>
+        <h3>内容</h3>
+        <ul>
+          <li><a href="#hsck-focus">焦点内容</a></li>
+          <li><a href="#hsck-videos">精选视频</a></li>
+          <li><a href="#hsck-specials">品牌专题</a></li>
+          <li><a href="#hsck-rank">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>社区</h3>
+        <ul>
+          <li><a href="#hsck-authors">创作者矩阵</a></li>
+          <li><a href="#hsck-comments">用户口碑</a></li>
+          <li><a href="#hsck-news">企业动态</a></li>
+          <li><button class="hsck-linktext" type="button" data-open="submit">投稿入口</button></li>
+        </ul>
+      </div>
+      <div>
+        <h3>支持</h3>
+        <ul>
+          <li><a href="#hsck-faq">常见问题</a></li>
+          <li><button class="hsck-linktext" type="button" data-open="report">反馈与举报</button></li>
+          <li><button class="hsck-linktext" type="button" data-copy>复制本页链接</button></li>
+          <li><a href="#hsck-about">关于品牌</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hsck-footer__bottom">
+      <span>© 2026 hsck 黄仓库 版权所有 · 官方网站 · 持续运营中</span>
+      <span>备案号：京 ICP 备 2026000000 号 · 内容登记编号 HSCK-2026-1122</span>
+    </div>
+  </div>
+</footer>
+
+<div class="hsck-toast" id="hsckToast" role="status" aria-live="polite"></div>
+
+<div class="hsck-modal" id="hsckModal" role="dialog" aria-modal="true" aria-labelledby="hsckModalTitle">
+  <div class="hsck-modal__box">
+    <button class="hsck-modal__close" type="button" id="hsckModalClose" aria-label="关闭弹窗">×</button>
+    <h3 id="hsckModalTitle"></h3>
+    <div id="hsckModalBody"></div>
+  </div>
+</div>
+
+<button class="hsck-top" id="hsckTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  var toast = document.getElementById('hsckToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('hsckBurger');
+  var nav = document.getElementById('hsckNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.textContent = open ? '关闭' : '菜单';
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && nav.classList.contains('is-open')){
+      nav.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+      burger.textContent = '菜单';
+    }
+  });
+
+  /* 搜索筛选反馈 */
+  var searchForm = document.getElementById('hsckSearchForm');
+  var searchInput = document.getElementById('hsckSearchInput');
+  var searchMsg = document.getElementById('hsckSearchMsg');
+  var index = [];
+  document.querySelectorAll('#hsck-focus h3, .hsck-vrow__body h3, .hsck-author h3, .hsck-special h3, .hsck-newscard h3').forEach(function(el){
+    index.push({t: el.textContent.trim(), el: el});
+  });
+  searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = searchInput.value.trim();
+    if(!q){
+      searchMsg.style.display = 'block';
+      searchMsg.textContent = '请输入关键词后再搜索，例如“城市”“手作”“访谈”。';
+      return;
+    }
+    var hits = index.filter(function(item){ return item.t.indexOf(q) > -1; });
+    searchMsg.style.display = 'block';
+    if(hits.length){
+      searchMsg.textContent = '在 hsck 黄仓库中找到 ' + hits.length + ' 个相关内容，已为你定位到第一条。';
+      hits[0].el.scrollIntoView({behavior:'smooth', block:'center'});
+    }else{
+      searchMsg.textContent = '暂未找到与“' + q + '”直接匹配的内容，建议换个词，或前往帮助中心看看专题目录。';
+    }
+  });
+
+  /* 点赞与收藏 */
+  document.addEventListener('click', function(e){
+    var like = e.target.closest('[data-like]');
+    if(like){
+      var num = like.querySelector('b');
+      var on = like.classList.toggle('is-on');
+      if(num){
+        var cur = parseInt(num.textContent, 10);
+        if(!isNaN(cur)) num.textContent = on ? cur + 1 : cur - 1;
+      }
+      showToast(on ? '已点赞，感谢你的支持' : '已取消点赞');
+      return;
+    }
+    var save = e.target.closest('[data-save]');
+    if(save){
+      var s = save.classList.toggle('is-on');
+      save.innerHTML = s ? '<span aria-hidden="true">★</span> 已收藏' : '<span aria-hidden="true">☆</span> 收藏';
+      showToast(s ? '已收藏到你的片单' : '已从片单移除');
+      return;
+    }
+    var copy = e.target.closest('[data-copy]');
+    if(copy){
+      var url = window.location.href;
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){
+          showToast('链接已复制，可以分享给同好了');
+        }).catch(function(){
+          showToast('复制失败，请手动选择地址栏复制');
+        });
+      }else{
+        showToast('当前环境不支持自动复制，请手动复制地址栏');
+      }
+      return;
+    }
+  });
+
+  /* 弹窗 */
+  var modal = document.getElementById('hsckModal');
+  var modalTitle = document.getElementById('hsckModalTitle');
+  var modalBody = document.getElementById('hsckModalBody');
+
+  var content = {
+    submit: {
+      title: '投稿与报名入口',
+      html: '<p>欢迎向 hsck 黄仓库提交原创作品。请留下联系方式与作品链接，编辑团队会在 7 个工作日内回复初审意见。</p>'
+        + '<input type="text" id="hsckFormName" placeholder="你的昵称或机构名称">'
+        + '<input type="email" id="hsckFormMail" placeholder="联系邮箱">'
+        + '<textarea id="hsckFormNote" rows="3" placeholder="作品链接与一句话简介"></textarea>'
+        + '<button class="hsck-btn hsck-btn--primary" type="button" id="hsckFormSend">提交投稿</button>'
+    },
+    report: {
+      title: '反馈与举报',
+      html: '<p>如果你发现版权问题、内容错误或播放异常，请描述具体情况，我们会尽快核查并回复。</p>'
+        + '<textarea id="hsckFormReport" rows="4" placeholder="请描述问题，例如：某视频字幕时间轴错位"></textarea>'
+        + '<button class="hsck-btn hsck-btn--primary" type="button" id="hsckReportSend">提交反馈</button>'
+    },
+    author: {
+      title: '创作者档案',
+      html: '<p>hsck 黄仓库的创作者均经过实名与作品双重核验，档案会随合作进度更新。你可以在创作者矩阵中查看擅长领域、作品数与粉丝数据，并通过官网投稿入口申请成为长期合作创作者。</p>'
+        + '<p>我们鼓励新人从一支三分钟内的短片开始，编辑会在回复中给出具体的拍摄与剪辑建议。</p>'
+    }
+  };
+
+  function openModal(key){
+    var data = content[key] || content.submit;
+    modalTitle.textContent = data.title;
+    modalBody.innerHTML = data.html;
+    modal.classList.add('is-open');
+    var first = modalBody.querySelector('input, textarea, button');
+    if(first) first.focus();
+    bindModalActions();
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+  }
+  function bindModalActions(){
+    var send = document.getElementById('hsckFormSend');
+    if(send){
+      send.addEventListener('click', function(){
+        var name = document.getElementById('hsckFormName');
+        var mail = document.getElementById('hsckFormMail');
+        if(!name.value.trim() || !mail.value.trim()){
+          showToast('请至少填写昵称与联系邮箱');
+          return;
+        }
+        closeModal();
+        showToast('投稿已提交，编辑会尽快联系你');
+      });
+    }
+    var rep = document.getElementById('hsckReportSend');
+    if(rep){
+      rep.addEventListener('click', function(){
+        var box = document.getElementById('hsckFormReport');
+        if(!box.value.trim()){
+          showToast('请先描述你遇到的问题');
+          return;
+        }
+        closeModal();
+        showToast('反馈已收到，感谢你的帮助');
+      });
+    }
+  }
+  document.addEventListener('click', function(e){
+    var trigger = e.target.closest('[data-open]');
+    if(trigger){
+      openModal(trigger.getAttribute('data-open'));
+    }
+  });
+  document.getElementById('hsckModalClose').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){
+    if(e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('hsckTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ topBtn.classList.add('is-show'); }
+    else{ topBtn.classList.remove('is-show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 数据滚动 */
+  var counters = document.querySelectorAll('[data-count]');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(!entry.isIntersecting) return;
+        var el = entry.target;
+        var target = parseFloat(el.getAttribute('data-count'));
+        var isFloat = el.getAttribute('data-count').indexOf('.') > -1;
+        var start = performance.now();
+        var dur = 1100;
+        function step(now){
+          var p = Math.min((now - start) / dur, 1);
+          var val = target * (1 - Math.pow(1 - p, 3));
+          el.textContent = isFloat ? val.toFixed(1) : Math.round(val).toLocaleString('en-US');
+          if(p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        io.unobserve(el);
+      });
+    }, {threshold:.5});
+    counters.forEach(function(el){ io.observe(el); });
+  }
+})();
+</script>
+</body>
+  </html>
